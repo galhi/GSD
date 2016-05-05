@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-
+<?php
+if (!$this->ion_auth->logged_in())
+    {
+      // redirect them to the login page
+      redirect('auth/login', 'refresh');
+    }
+    ?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -13,6 +19,8 @@
     <link rel="stylesheet" href="<?php echo base_url();?>plugins/font-awesome/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="<?php echo base_url();?>plugins/ionicons/css/ionicons.min.css">
+    <!-- Data tables -->
+    <link rel="stylesheet" href="<?php echo base_url();?>plugins/datatables/dataTables.bootstrap.css">
     
     <link rel="stylesheet" href="<?php echo base_url();?>plugins/dist/css/en/theme.css">
 
