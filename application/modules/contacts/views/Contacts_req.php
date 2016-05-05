@@ -18,8 +18,7 @@
           "searching": true,
           "ordering": true,
           "info": true,
-          "autoWidth": true,
-          ajax:           "<?php echo base_url('index.php/ajax/load_contacts/').'/'.$this->ion_auth->user()->row()->id;?>"
+          "autoWidth": true
         });
 
       });
@@ -31,7 +30,6 @@
       	 $('#example1').DataTable().search( '' ).draw();
 
       });
-      //todo : create a functon to return ajax data(all contacts )
     </script>
 
   </body>
