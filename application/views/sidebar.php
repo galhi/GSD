@@ -33,9 +33,7 @@
             <!-- Optionally, you can add icons to the links -->
              <li class="treeview">
              <!-- for each projects with icon -->
-              <a href="#" ><i class="fa fa-user  iconcolor"></i> <span> &nbsp;&nbsp;&nbsp; Contact List</span> </a>
-
-              <a href="#" ><i class="fa fa-user-plus  iconcolor"></i> <span> &nbsp;&nbsp;&nbsp; Invite Friends</span> </a>
+              <a href="<?php echo base_url('index.php/contacts');?>" ><i class="fa fa-user  iconcolor"></i> <span> &nbsp;&nbsp;&nbsp; Contact List</span> </a>
             </li>
 
             
